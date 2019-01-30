@@ -7,8 +7,8 @@ describe('reducer', () => {
         expect(state.guesses).toEqual([]);
         expect(state.feedback).toEqual('Make your guess!');
         expect(state.auralStatus).toEqual('');
-        expect(state.correctAnswer).toBeLessThan(100);
-        expect(state.correctAnswer).toBeGreaterThan(1);
+        expect(state.correctAnswer).toBeLessThan(101);
+        expect(state.correctAnswer).toBeGreaterThan(0);
     });
 
     it('Should return the current state on an unknown action', () => {
